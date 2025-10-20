@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم التداول بالذكاء الاصطناعي</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>لوحة تحكم التداول بالذكاء الاصطناعي (الأسهم)</h1>
+    <p class="subtitle">استراتيجية تقاطع المتوسط المتحرك البسيط (SMA)</p>
+  </header>
+
+  <main>
+    <section id="statusSection" class="card">
+      <h2>حالة النظام</h2>
+      <div id="statusBox">
+        <div><strong>الحالة:</strong> <span id="statusText">—</span></div>
+        <div><strong>آخر تشغيل:</strong> <span id="lastRun">—</span></div>
+        <div><strong>الإشارات الأخيرة:</strong> <span id="signals">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>الرسم البياني (أسعار آخر صفقات)</h2>
+      <canvas id="tradeChart" height="120"></canvas>
+    </section>
+
+    <section class="card">
+      <h2>سجل الصفقات (آخر 20)</h2>
+      <table id="tradesTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>الوقت</th>
+            <th>الرمز</th>
+            <th>الإجراء</th>
+            <th>السعر</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>هذا تطبيق تجريبي لأغراض تعليمية فقط. لا يقوم بتنفيذ صفقات حقيقية.</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
