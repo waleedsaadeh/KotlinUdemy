@@ -1,0 +1,80 @@
+// ACG ERP - Prisma schema
+// Datasource: PostgreSQL (recommended for ERP transactional integrity)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  MANAGER
+  USER
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(USER)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  nameEn      String
+  nameAr      String
+  description String?
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Warehouse {
+  id        String   @id @default(cuid())
+  nameEn    String
+  nameAr    String
+  location  String?
+  isActive  Boolean  @default(true)
+  stock     Stock[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  sku         String    @unique
+  nameEn      String
+  nameAr      String
+  description String?
+  unit        String    @default("pcs")
+  costPrice   Decimal   @default(0) @db.Decimal(14, 2)
+  salePrice   Decimal   @default(0) @db.Decimal(14, 2)
+  reorderLevel Int      @default(0)
+  isActive    Boolean   @default(true)
+  categoryId  String?
+  category    Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  stock       Stock[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// Quantity of a product held in a specific warehouse
+model Stock {
+  id          String    @id @default(cuid())
+  productId   String
+  warehouseId String
+  quantity    Int       @default(0)
+  product     Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  warehouse   Warehouse @relation(fields: [warehouseId], references: [id], onDelete: Cascade)
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([productId, warehouseId])
+}

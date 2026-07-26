@@ -1,0 +1,16 @@
+{
+  "name": "acg-erp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ACG ERP - Modern bilingual ERP system",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "build": "npm run build --workspace server && npm run build --workspace client"
+  },
+  "license": "MIT"
+}

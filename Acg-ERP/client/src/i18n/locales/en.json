@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "ACG ERP",
+    "tagline": "Enterprise Resource Planning"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "actions": "Actions",
+    "loading": "Loading...",
+    "confirmDelete": "Are you sure you want to delete this item?",
+    "noData": "No data available",
+    "all": "All",
+    "active": "Active",
+    "inactive": "Inactive",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "categories": "Categories",
+    "warehouses": "Warehouses",
+    "inventory": "Inventory",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "loginTitle": "Sign in to your account",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "invalidCredentials": "Invalid email or password",
+    "welcome": "Welcome back"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "products": "Products",
+    "categories": "Categories",
+    "warehouses": "Warehouses",
+    "totalUnits": "Total Units in Stock",
+    "inventoryValue": "Inventory Value",
+    "lowStock": "Low Stock Alerts",
+    "noLowStock": "All products are well stocked.",
+    "reorderLevel": "Reorder level"
+  },
+  "product": {
+    "title": "Products",
+    "sku": "SKU",
+    "nameEn": "Name (English)",
+    "nameAr": "Name (Arabic)",
+    "name": "Name",
+    "category": "Category",
+    "unit": "Unit",
+    "costPrice": "Cost Price",
+    "salePrice": "Sale Price",
+    "reorderLevel": "Reorder Level",
+    "stock": "In Stock",
+    "status": "Status",
+    "description": "Description",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "noCategory": "No Category"
+  },
+  "category": {
+    "title": "Categories",
+    "nameEn": "Name (English)",
+    "nameAr": "Name (Arabic)",
+    "description": "Description",
+    "productCount": "Products",
+    "addCategory": "Add Category",
+    "editCategory": "Edit Category"
+  },
+  "warehouse": {
+    "title": "Warehouses",
+    "nameEn": "Name (English)",
+    "nameAr": "Name (Arabic)",
+    "location": "Location",
+    "status": "Status",
+    "addWarehouse": "Add Warehouse",
+    "editWarehouse": "Edit Warehouse"
+  }
+}

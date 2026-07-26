@@ -1,0 +1,87 @@
+{
+  "app": {
+    "name": "نظام ACG",
+    "tagline": "تخطيط موارد الشركات"
+  },
+  "common": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "actions": "إجراءات",
+    "loading": "جارٍ التحميل...",
+    "confirmDelete": "هل أنت متأكد أنك تريد حذف هذا العنصر؟",
+    "noData": "لا توجد بيانات",
+    "all": "الكل",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "products": "المنتجات",
+    "categories": "الأصناف",
+    "warehouses": "المستودعات",
+    "inventory": "المخزون",
+    "logout": "تسجيل الخروج"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "loginTitle": "سجّل الدخول إلى حسابك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "signIn": "دخول",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "welcome": "مرحباً بعودتك"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "products": "المنتجات",
+    "categories": "الأصناف",
+    "warehouses": "المستودعات",
+    "totalUnits": "إجمالي الوحدات في المخزون",
+    "inventoryValue": "قيمة المخزون",
+    "lowStock": "تنبيهات نقص المخزون",
+    "noLowStock": "جميع المنتجات متوفرة بكميات كافية.",
+    "reorderLevel": "حد إعادة الطلب"
+  },
+  "product": {
+    "title": "المنتجات",
+    "sku": "رمز المنتج",
+    "nameEn": "الاسم (إنجليزي)",
+    "nameAr": "الاسم (عربي)",
+    "name": "الاسم",
+    "category": "الصنف",
+    "unit": "الوحدة",
+    "costPrice": "سعر التكلفة",
+    "salePrice": "سعر البيع",
+    "reorderLevel": "حد إعادة الطلب",
+    "stock": "المتوفر",
+    "status": "الحالة",
+    "description": "الوصف",
+    "addProduct": "إضافة منتج",
+    "editProduct": "تعديل منتج",
+    "noCategory": "بدون صنف"
+  },
+  "category": {
+    "title": "الأصناف",
+    "nameEn": "الاسم (إنجليزي)",
+    "nameAr": "الاسم (عربي)",
+    "description": "الوصف",
+    "productCount": "المنتجات",
+    "addCategory": "إضافة صنف",
+    "editCategory": "تعديل صنف"
+  },
+  "warehouse": {
+    "title": "المستودعات",
+    "nameEn": "الاسم (إنجليزي)",
+    "nameAr": "الاسم (عربي)",
+    "location": "الموقع",
+    "status": "الحالة",
+    "addWarehouse": "إضافة مستودع",
+    "editWarehouse": "تعديل مستودع"
+  }
+}
