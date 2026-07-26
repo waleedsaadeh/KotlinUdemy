@@ -9,8 +9,7 @@ import { useAuth } from '../context/AuthContext';
 const empty = { nameEn: '', nameAr: '', description: '' };
 
 export function CategoriesPage() {
-  const { t, i18n } = useTranslation();
-  const isAr = i18n.language === 'ar';
+  const { t } = useTranslation();
   const qc = useQueryClient();
   const { user } = useAuth();
   const canEdit = user?.role === 'ADMIN' || user?.role === 'MANAGER';

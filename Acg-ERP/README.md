@@ -14,6 +14,14 @@ built to be easy to extend, module by module.
 
 ---
 
+## 📸 Screenshots / لقطات
+
+| Dashboard (Arabic / RTL) | Products (English / LTR) |
+|---|---|
+| ![Dashboard AR](docs/screenshots/dashboard-ar.png) | ![Products EN](docs/screenshots/products-en.png) |
+
+---
+
 ## ✨ Features / المزايا
 
 - 🌍 **Bilingual** — full Arabic (RTL) & English (LTR) support, switchable at runtime.
